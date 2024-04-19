@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS code for styling the web page */
+    
+    /* Set the font family and size for the whole page */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    
+    /* Set the margin and padding for the blog element */
+    #blog {
+      margin: 20px;
+      padding: 10px;
+    }
+    
+    /* Set the border, margin, padding and background color for each post element */
+    .post {
+      border: 1px solid black;
+      margin: 10px;
+      padding: 10px;
+      background-color: lightblue;
+      
+      /* Add a transition property for the transform, opacity and box-shadow properties */
+      transition: transform 0.5s, opacity 0.5s, box-shadow 0.5s;
+    }
+    
+    /* Set the font size and color for the post title element */
+    h2 {
+      font-size: 24px;
+      color: darkblue;
+      
+      /* Apply the bounce animation to the post title element */
+      animation: bounce 2s ease-in-out infinite alternate;
+    }
+    
+    /* Define an animation named bounce that makes an element move up and down */
+    @keyframes bounce {
+      /* Start from the original position */
+      0% {
+        transform: translateY(0);
+      }
+      
+      /* Move up by 50 pixels at 25% of the duration */
+      25% {
+        transform: translateY(-50px);
+      }
+      
+      /* Move back to the original position at 50% of the duration */
+      50% {
+        transform: translateY(0);
+      }
+      
+      /* Move down by 50 pixels at 75% of the duration */
+      75% {
+        transform: translateY(50px);
+      }
+      
+      /* End at the original position */
+      100% {
+        transform: translateY(0);
+      }
+    }
+    
+    /* Set the font size and color for the post date element */
+    p {
+      font-size: 14px;
+      color: gray;
+    }
+    
+    /* Set the font size and color for the post content element */
+    p:nth-child(3) {
+      font-size: 18px;
+      color: black;
+    }
+    
+    /* Set the margin, padding, border and background color for the button elements */
+    button {
+      margin: 5px;
+      padding: 5px;
+      border: none;
+      background-color: white;
+      
+      /* Add a transition property for the background-color property */
+
